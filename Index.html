@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRG Representation in Italy | نوێنەرایەتی کوردستان لە ئیتاڵیا</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Top Header */
+        .top-header {
+            background-color: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .top-header .container {
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-image img {
+            width: 140px;
+            height: 80px;
+            object-fit: contain;
+        }
+
+        .site-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .domain {
+            font-size: 0.85em;
+            color: #d32f2f;
+            font-weight: bold;
+            direction: ltr;
+            letter-spacing: 0.5px;
+        }
+
+        .site-name {
+            font-size: 1.4em;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .language-search {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .lang-option {
+            text-decoration: none;
+            color: #555;
+            font-size: 0.9em;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+
+        .lang-option:hover {
+            background-color: #f5f5f5;
+            color: #000;
+        }
+
+        .lang-option.active {
+            background-color: #1976d2;
+            color: #fff;
+            border-color: #1976d2;
+        }
+
+        .search-icon {
+            font-size: 1.2em;
+            cursor: pointer;
+            color: #555;
+            padding: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .search-icon:hover {
+            color: #1976d2;
+        }
+
+        /* Navigation Menu */
+        .main-nav {
+            background-color: #2c3e50;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .main-nav .container {
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .main-nav li {
+            position: relative;
+        }
+
+        .main-nav a {
+            display: block;
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 16px 22px;
+            font-size: 0.95em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .main-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background-color: #3498db;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .main-nav a:hover {
+            background-color: #34495e;
+        }
+
+        .main-nav a:hover::after {
+            width: 80%;
+        }
+
+        /* Hero Slider Section */
+        .hero-slider {
+            position: relative;
+            height: 600px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .slide-content {
+            text-align: center;
+            color: white;
+            max-width: 900px;
+            padding: 40px;
+            animation: slideUp 0.8s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide-content h1 {
+            font-size: 3.2em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-weight: 700;
+        }
+
+        .slide-content p {
+            font-size: 1.4em;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+        }
+
+        .cta-button:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.6);
+        }
+
+        .slider-dots {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            z-index: 10;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background-color: white;
+            width: 30px;
+            border-radius: 6px;
+        }
+
+        /* Latest News Section */
+        .news-section {
+            padding: 80px 20px;
+            background-color: #f8f9fa;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.8em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #3498db, #e74c3c);
+            border-radius: 2px;
+        }
+
+        .section-header p {
+            font-size: 1.2em;
+            color: #666;
+            max-width: 700px;
+            margin: 20px auto 0;
+        }
+
+        .news-grid {
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 35px;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+
+        .news-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .news-image {
+            width: 100%;
+            height: 240px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+            color: white;
+        }
+
+        .news-content {
+            padding: 30px;
+        }
+
+        .news-date {
+            color: #e74c3c;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .news-content h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            line-height: 1.4;
+        }
+
+        .news-content p {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: gap 0.3s ease;
+        }
+
+        .read-more:hover {
+            gap: 12px;
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .services-grid {
+            width: 90%;
+            max-width: 1400px;
+            margin: 50px auto 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .service-card:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .service-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        /* Statistics Section */
+        .stats-section {
+            padding: 80px 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        .stats-grid {
+            width: 90%;
+            max-width: 1400px;
+            margin: 50px auto 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .stat-number {
+            font-size: 4em;
+            font-weight: 700;
+            color: #3498db;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a252f;
+            color: #ecf0f1;
+            padding: 60px 20px 30px;
+        }
+
+        .footer-content {
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 20px;
+            color: #3498db;
+            font-size: 1.3em;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: inline-block;
+        }
+
+        .footer-section a:hover {
+            color: #3498db;
+            padding-left: 5px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            background-color: #34495e;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3em;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background-color: #3498db;
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid #34495e;
+            color: #95a5a6;
+        }
+
+        /* RTL Support */
+        body[dir="rtl"] {
+            direction: rtl;
+        }
+
+        body[dir="rtl"] .site-info {
+            text-align: right;
+        }
+
+        body[dir="rtl"] .main-nav ul {
+            flex-direction: row-reverse;
+        }
+
+        body[dir="rtl"] .read-more:hover {
+            padding-right: 5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .top-header .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .main-nav ul {
+                flex-direction: column;
+            }
+
+            .hero-slider {
+                height: 450px;
+            }
+
+            .slide-content h1 {
+                font-size: 2em;
+            }
+
+            .slide-content p {
+                font-size: 1.1em;
+            }
+
+            .section-header h2 {
+                font-size: 2em;
+            }
+
+            .stat-number {
+                font-size: 3em;
+            }
+        }
+    </style>
+</head>
+<body dir="ltr">
+
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="container">
+            <div class="logo-section">
+                <div class="logo-image">
+                    <img src="rasm.png" alt="KRG Logo">
+                </div>
+                <div class="site-info">
+                    <div class="domain">| ITALY.GOV.KRD</div>
+                    <div class="site-name" id="govName">KRG Representation in Italy</div>
+                </div>
+            </div>
+
+            <nav class="language-search">
+                <a href="#" class="lang-option active" id="langEn" onclick="switchLanguage('en')">English</a>
+                <a href="#" class="lang-option" id="langKu" onclick="switchLanguage('ku')">کوردی</a>
+                <a href="#" class="lang-option" id="langIt" onclick="switchLanguage('it')">Italiano</a>
+                <span class="search-icon" onclick="alert('Search functionality')">🔍</span>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul id="mainMenu">
+                <li><a href="#" data-en="Home" data-ku="سەرەکی" data-it="Home">Home</a></li>
+                <li><a href="#" data-en="About Us" data-ku="دەربارەمان" data-it="Chi Siamo">About Us</a></li>
+                <li><a href="#" data-en="News & Events" data-ku="هەواڵ و بۆنەکان" data-it="Notizie">News & Events</a></li>
+                <li><a href="#" data-en="Services" data-ku="خزمەتگوزارییەکان" data-it="Servizi">Services</a></li>
+                <li><a href="#" data-en="Trade & Investment" data-ku="بازرگانی و وەبەرهێنان" data-it="Commercio">Trade & Investment</a></li>
+                <li><a href="#" data-en="Culture" data-ku="کەلتوور" data-it="Cultura">Culture</a></li>
+                <li><a href="#" data-en="Contact" data-ku="پەیوەندی" data-it="Contatti">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slide active">
+            <div class="slide-content">
+                <h1 id="slide1Title">Welcome to KRG Representation in Italy</h1>
+                <p id="slide1Text">Strengthening diplomatic and economic relations between Kurdistan Region and the Italian Republic</p>
+                <a href="#" class="cta-button" id="slide1Btn">Learn More</a>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-content">
+                <h1 id="slide2Title">Building Bridges of Partnership</h1>
+                <p id="slide2Text">Promoting trade, investment, and cultural exchange opportunities</p>
+                <a href="#" class="cta-button" id="slide2Btn">Explore Opportunities</a>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-content">
+                <h1 id="slide3Title">Your Gateway to Kurdistan</h1>
+                <p id="slide3Text">Consular services, visa assistance, and support for Italian citizens and businesses</p>
+                <a href="#" class="cta-button" id="slide3Btn">Contact Us</a>
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="news-section">
+        <div class="section-header">
+            <h2 id="newsTitle">Latest News & Updates</h2>
+            <p id="newsSubtitle">Stay informed about the latest developments and activities</p>
+        </div>
+        <div class="news-grid">
+            <div class="news-card">
+                <div class="news-image">📰</div>
+                <div class="news-content">
+                    <div class="news-date" id="news1Date">November 14, 2024</div>
+                    <h3 id="news1Title">Economic Cooperation Agreement Signed</h3>
+                    <p id="news1Text">KRG and Italian businesses sign new trade agreements to strengthen economic ties and promote bilateral investment opportunities.</p>
+                    <a href="#" class="read-more" id="news1Link">Read more →</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-image">🤝</div>
+                <div class="news-content">
+                    <div class="news-date" id="news2Date">November 10, 2024</div>
+                    <h3 id="news2Title">Cultural Exchange Program Launched</h3>
+                    <p id="news2Text">New initiative brings Kurdish and Italian artists together to celebrate shared heritage and contemporary creativity.</p>
+                    <a href="#" class="read-more" id="news2Link">Read more →</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-image">🎓</div>
+                <div class="news-content">
+                    <div class="news-date" id="news3Date">November 5, 2024</div>
+                    <h3 id="news3Title">Scholarship Opportunities Available</h3>
+                    <p id="news3Text">Italian universities offer scholarships for Kurdish students in various fields of study. Applications now open.</p>
+                    <a href="#" class="read-more" id="news3Link">Read more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="section-header">
+            <h2 id="servicesTitle">Our Services</h2>
+            <p id="servicesSubtitle">Comprehensive support for citizens, businesses, and organizations</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="service-icon">🛂</span>
+                <h3 id="service1Title">Consular Services</h3>
+                <p id="service1Text">Visa processing, passport services, and document authentication for travelers and residents.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">💼</span>
+                <h3 id="service2Title">Business Support</h3>
+                <p id="service2Text">Trade facilitation, investment guidance, and business matchmaking services.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">🎨</span>
+                <h3 id="service3Title">Cultural Programs</h3>
+                <p id="service3Text">Cultural events, exhibitions, and educational programs promoting Kurdish heritage.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">📚</span>
+                <h3 id="service4Title">Information Center</h3>
+                <p id="service4Text">Resources and information about Kurdistan Region, travel, and opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="stats-section">
+        <div class="section-header">
+            <h2 id="statsTitle">Our Impact</h2>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number" data-target="5000">0</span>
+                <span class="stat-label" id="stat1Label">Visas Processed</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" data-target="150">0</span>
+                <span class="stat-label" id="stat2Label">Business Partnerships</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" data-target="50">0</span>
+                <span class="stat-label" id="stat3Label">Cultural Events</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" data-target="1000">0</span>
+                <span class="stat-label" id="stat4Label">Students Supported</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4 id="footerAbout">About KRG Italy</h4>
+                <p id="footerAboutText">The Kurdistan Regional Government Representation in Italy serves as the official diplomatic mission, fostering strong bilateral relations and serving the Kurdish community.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">📘</a>
+                    <a href="#" class="social-icon">🐦</a>
+                    <a href="#" class="social-icon">📷</a>
+                    <a href="#" class="social-icon">🎥</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4 id="footerQuick">Quick Links</h4>
+                <ul>
+                    <li><a href="#" id="footerLink1">About Kurdistan</a></li>
+                    <li><a href="#" id="footerLink2">Government Structure</a></li>
+                    <li><a href="#" id="footerLink3">Latest News</a></li>
+                    <li><a href="#" id="footerLink4">Publications</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 id="footerServices">Services</h4>
+                <ul>
+                    <li><a href="#" id="footerLink5">Visa Applications</a></li>
+                    <li><a href="#" id="footerLink6">Business Services</a></li>
+                    <li><a href="#" id="footerLink7">Trade Information</a></li>
+                    <li><a href="#" id="footerLink8">Cultural Programs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 id="footerContact">Contact Us</h4>
+                <ul>
+                    <li>📍 <span id="addressText">Rome, Italy</span></li>
+                    <li>📧 info@italy.gov.krd</li>
+                    <li>📱 +39 XXX XXX XXXX</li>
+                    <li>🕐 <span id="hoursText">Mon-Fri: 9:00-17:00</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p id="copyright">© 2025 Kurdistan Regional Government Representation in Italy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Translations
+        const translations = {
+            en: {
+                govName: 'KRG Representation in Italy',
+                slide1Title: 'Welcome to KRG Representation in Italy',
+                slide1Text: 'Strengthening diplomatic and economic relations between Kurdistan Region and the Italian Republic',
+                slide1Btn: 'Learn More',
+                slide2Title: 'Building Bridges of Partnership',
+                slide2Text: 'Promoting trade, investment, and cultural exchange opportunities',
+                slide2Btn: 'Explore Opportunities',
+                slide3Title: 'Your Gateway to Kurdistan',
+                slide3Text: 'Consular services, visa assistance, and support for Italian citizens and businesses',
+                slide3Btn: 'Contact Us',
+                newsTitle: 'Latest News & Updates',
+                newsSubtitle: 'Stay informed about the latest developments and activities',
+                news1Date: 'November 14, 2024',
+                news1Title: 'Economic Cooperation Agreement Signed',
+                news1Text: 'KRG and Italian businesses sign new trade agreements to strengthen economic ties.',
+                news1Link: 'Read more →',
+                news2Date: 'November 10, 2024',
+                news2Title: 'Cultural Exchange Program Launched',
+                news2Text: 'New initiative brings Kurdish and Italian artists together.',
+                news2Link: 'Read more →',
+                news3Date: 'November 5, 2024',
+                news3Title: 'Scholarship Opportunities Available',
+                news3Text: 'Italian universities offer scholarships for Kurdish students.',
+                news3Link: 'Read more →',
+                servicesTitle: 'Our Services',
+                servicesSubtitle: 'Comprehensive support for citizens, businesses, and organizations',
+                service1Title: 'Consular Services',
+                service1Text: 'Visa processing, passport services, and document authentication.',
+                service2Title: 'Business Support',
+                service2Text: 'Trade facilitation, investment guidance, and business matchmaking.',
+                service3Title: 'Cultural Programs',
+                service3Text: 'Cultural events, exhibitions, and educational programs.',
+                service4Title: 'Information Center',
+                service4Text: 'Resources and information about Kurdistan Region.',
+                statsTitle: 'Our Impact',
+                stat1Label: 'Visas Processed',
+                stat2Label: 'Business Partnerships',
+                stat3Label: 'Cultural Events',
+                stat4Label: 'Students Supported',
+                footerAbout: 'About KRG Italy',
+                footerAboutText: 'The Kurdistan Regional Government Representation in Italy serves as the official diplomatic mission.',
+                footerQuick: 'Quick Links',
+                footerLink1: 'About Kurdistan',
+                footerLink2: 'Government Structure',
+                footerLink3: 'Latest News',
+                footerLink4: 'Publications',
+                footerServices: 'Services',
+                footerLink5: 'Visa Applications',
+                footerLink6: 'Business Services',
+                footerLink7: 'Trade Information',
+                footerLink8: 'Cultural Programs',
+                footerContact: 'Contact Us',
+                addressText: 'Rome, Italy',
+                hoursText: 'Mon-Fri: 9:00-17:00',
+                copyright: '© 2025 Kurdistan Regional Government Representation in Italy. All rights reserved.'
+            },
+            ku: {
+                govName: 'نوێنەرایەتی حکومەتی هەرێمی کوردستان لە ئیتاڵیا',
+                slide1Title: 'بەخێربێن بۆ نوێنەرایەتی حکومەتی هەرێم لە ئیتاڵیا',
+                slide1Text: 'بەهێزکردنی پەیوەندییە دیپلۆماسی و ئابوورییەکان لە نێوان هەرێمی کوردستان و کۆماری ئیتاڵیادا',
+                slide1Btn: 'زیاتر بزانە',
+                slide2Title: 'دروستکردنی پردی هاوبەشی',
+                slide2Text: 'پێشخستنی دەرفەتەکانی بازرگانی و وەبەرهێنان و ئاڵوگۆڕی کەلتووری',
+                slide2Btn: 'دەرفەتەکان ببینە',
+                slide3Title: 'دەرگای تۆ بۆ کوردستان',
+                slide3Text: 'خزمەتگوزارییەکانی کۆنسوڵی، یارمەتی ڤیزا، و پشتگیری بۆ هاووڵاتیان و کاروباری ئیتاڵی',
+                slide3Btn: 'پەیوەندیمان پێوە بکە',
+                newsTitle: 'دوایین هەواڵ و نوێکاریەکان',
+                newsSubtitle: 'بەردەوام بە لە گەشەکردنەکان و چالاکییەکان',
+                news1Date: '١٤ نۆڤەمبەری ٢٠٢٤',
+                news1Title: 'ڕێککەوتنی هاوکاری ئابووری واژۆکرا',
+                news1Text: 'حکومەتی هەرێم و کاروباری ئیتاڵی ڕێککەوتنی بازرگانی نوێ واژۆدەکەن.',
+                news1Link: 'زیاتر بخوێنەوە ←',
+                news2Date: '١٠ نۆڤەمبەری ٢٠٢٤',
+                news2Title: 'پرۆگرامی ئاڵوگۆڕی کەلتووری دەستپێکرا',
+                news2Text: 'دەستپێشخەری نوێ هونەرمەندانی کورد و ئیتاڵی کۆدەکاتەوە.',
+                news2Link: 'زیاتر بخوێنەوە ←',
+                news3Date: '٥ نۆڤەمبەری ٢٠٢٤',
+                news3Title: 'دەرفەتی بورس لەبەردەستدایە',
+                news3Text: 'زانکۆکانی ئیتاڵیا بورس پێشکەش بە خوێندکارانی کورد دەکەن.',
+                news3Link: 'زیاتر بخوێنەوە ←',
+                servicesTitle: 'خزمەتگوزارییەکانمان',
+                servicesSubtitle: 'پشتگیری تەواو بۆ هاووڵاتیان و کاروبار و ڕێکخراوەکان',
+                service1Title: 'خزمەتگوزاری کۆنسوڵی',
+                service1Text: 'پرۆسێسکردنی ڤیزا، خزمەتگوزاری پاسپۆرت و پشتڕاستکردنەوەی بەڵگەنامەکان.',
+                service2Title: 'پشتگیری بازرگانی',
+                service2Text: 'ئاسانکردنی بازرگانی، ڕێنمایی وەبەرهێنان و خزمەتگوزاری هاوتاکردنی بازرگانی.',
+                service3Title: 'پرۆگرامە کەلتوورییەکان',
+                service3Text: 'بۆنە کەلتوورییەکان، پێشانگاکان و پرۆگرامە پەروەردەییەکان.',
+                service4Title: 'ناوەندی زانیاری',
+                service4Text: 'سەرچاوەکان و زانیاری دەربارەی هەرێمی کوردستان.',
+                statsTitle: 'کاریگەریمان',
+                stat1Label: 'ڤیزای پرۆسێسکراو',
+                stat2Label: 'هاوبەشی بازرگانی',
+                stat3Label: 'بۆنە کەلتوورییەکان',
+                stat4Label: 'خوێندکاری پشتگیریکراو',
+                footerAbout: 'دەربارەی نوێنەرایەتی',
+                footerAboutText: 'نوێنەرایەتی حکومەتی هەرێمی کوردستان لە ئیتاڵیا وەک نێردراوی دیپلۆماسی فەرمی خزمەت دەکات.',
+                footerQuick: 'بەستەرە خێراکان',
+                footerLink1: 'دەربارەی کوردستان',
+                footerLink2: 'پێکهاتەی حکومەت',
+                footerLink3: 'دوایین هەواڵەکان',
+                footerLink4: 'بڵاوکراوەکان',
+                footerServices: 'خزمەتگوزارییەکان',
+                footerLink5: 'داواکاری ڤیزا',
+                footerLink6: 'خزمەتگوزارییەکانی بازرگانی',
+                footerLink7: 'زانیاری بازرگانی',
+                footerLink8: 'پرۆگرامە کەلتوورییەکان',
+                footerContact: 'پەیوەندیمان پێوە بکە',
+                addressText: 'ڕۆما، ئیتاڵیا',
+                hoursText: 'دووشەممە-هەینی: ٩:٠٠-١٧:٠٠',
+                copyright: '© ٢٠٢٥ نوێنەرایەتی حکومەتی هەرێمی کوردستان لە ئیتاڵیا. هەموو مافێک پارێزراوە.'
+            },
+            it: {
+                govName: 'Rappresentanza del GRK in Italia',
+                slide1Title: 'Benvenuti alla Rappresentanza del GRK in Italia',
+                slide1Text: 'Rafforzamento delle relazioni diplomatiche ed economiche tra la Regione del Kurdistan e la Repubblica Italiana',
+                slide1Btn: 'Scopri di più',
+                slide2Title: 'Costruire ponti di partnership',
+                slide2Text: 'Promuovere opportunità di scambio commerciale, investimenti e culturale',
+                slide2Btn: 'Esplora le opportunità',
+                slide3Title: 'Il tuo gateway per il Kurdistan',
+                slide3Text: 'Servizi consolari, assistenza visti e supporto per cittadini e imprese italiane',
+                slide3Btn: 'Contattaci',
+                newsTitle: 'Ultime notizie e aggiornamenti',
+                newsSubtitle: 'Rimani informato sugli ultimi sviluppi e attività',
+                news1Date: '14 novembre 2024',
+                news1Title: 'Accordo di cooperazione economica firmato',
+                news1Text: 'GRK e aziende italiane firmano nuovi accordi commerciali.',
+                news1Link: 'Leggi di più →',
+                news2Date: '10 novembre 2024',
+                news2Title: 'Programma di scambio culturale lanciato',
+                news2Text: 'Nuova iniziativa riunisce artisti curdi e italiani.',
+                news2Link: 'Leggi di più →',
+                news3Date: '5 novembre 2024',
+                news3Title: 'Borse di studio disponibili',
+                news3Text: 'Le università italiane offrono borse di studio per studenti curdi.',
+                news3Link: 'Leggi di più →',
+                servicesTitle: 'I nostri servizi',
+                servicesSubtitle: 'Supporto completo per cittadini, imprese e organizzazioni',
+                service1Title: 'Servizi consolari',
+                service1Text: 'Elaborazione visti, servizi passaporto e autenticazione documenti.',
+                service2Title: 'Supporto alle imprese',
+                service2Text: 'Facilitazione commerciale, orientamento agli investimenti.',
+                service3Title: 'Programmi culturali',
+                service3Text: 'Eventi culturali, mostre e programmi educativi.',
+                service4Title: 'Centro informazioni',
+                service4Text: 'Risorse e informazioni sulla Regione del Kurdistan.',
+                statsTitle: 'Il nostro impatto',
+                stat1Label: 'Visti elaborati',
+                stat2Label: 'Partnership commerciali',
+                stat3Label: 'Eventi culturali',
+                stat4Label: 'Studenti supportati',
+                footerAbout: 'Chi siamo',
+                footerAboutText: 'La Rappresentanza del GRK in Italia serve come missione diplomatica ufficiale.',
+                footerQuick: 'Link rapidi',
+                footerLink1: 'Sul Kurdistan',
+                footerLink2: 'Struttura governativa',
+                footerLink3: 'Ultime notizie',
+                footerLink4: 'Pubblicazioni',
+                footerServices: 'Servizi',
+                footerLink5: 'Richieste visto',
+                footerLink6: 'Servizi aziendali',
+                footerLink7: 'Informazioni commerciali',
+                footerLink8: 'Programmi culturali',
+                footerContact: 'Contattaci',
+                addressText: 'Roma, Italia',
+                hoursText: 'Lun-Ven: 9:00-17:00',
+                copyright: '© 2025 Rappresentanza del GRK in Italia. Tutti i diritti riservati.'
+            }
+        };
+
+        // Language Switcher
+        function switchLanguage(lang) {
+            const body = document.body;
+            const langEn = document.getElementById('langEn');
+            const langKu = document.getElementById('langKu');
+            const langIt = document.getElementById('langIt');
+
+            langEn.classList.remove('active');
+            langKu.classList.remove('active');
+            langIt.classList.remove('active');
+
+            if (lang === 'ku') {
+                body.setAttribute('dir', 'rtl');
+                langKu.classList.add('active');
+            } else if (lang === 'it') {
+                body.setAttribute('dir', 'ltr');
+                langIt.classList.add('active');
+            } else {
+                body.setAttribute('dir', 'ltr');
+                langEn.classList.add('active');
+            }
+
+            // Update all text content
+            Object.keys(translations[lang]).forEach(key => {
+                const element = document.getElementById(key);
+                if (element) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+
+            // Update menu items
+            const menuItems = document.querySelectorAll('#mainMenu a');
+            menuItems.forEach(item => {
+                const text = item.getAttribute(`data-${lang}`);
+                if (text) {
+                    item.textContent = text;
+                }
+            });
+        }
+
+        // Slider functionality
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            currentSlideIndex = n;
+            if (currentSlideIndex >= slides.length) currentSlideIndex = 0;
+            if (currentSlideIndex < 0) currentSlideIndex = slides.length - 1;
+            
+            slides[currentSlideIndex].classList.add('active');
+            dots[currentSlideIndex].classList.add('active');
+        }
+
+        function currentSlide(n) {
+            showSlide(n);
+        }
+
+        // Auto slide
+        setInterval(() => {
+            currentSlideIndex++;
+            showSlide(currentSlideIndex);
+        }, 5000);
+
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                let current = 0;
+
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        counter.textContent = Math.floor(current) + '+';
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target + '+';
+                    }
+                };
+                updateCounter();
+            });
+        }
+
+        // Trigger counter animation when in viewport
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        observer.observe(document.querySelector('.stats-section'));
+
+        // Prevent default link behavior
+        document.querySelectorAll('a[href="#"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+            });
+        });
+    </script>
+
+</body>
+</html>
